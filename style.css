@@ -168,6 +168,17 @@ body{
 }
 
 /* ===========================
+   HAMBURGER
+=========================== */
+
+.hamburger{
+    display:none;
+    font-size:2rem;
+    color:white;
+    cursor:pointer;
+}
+
+/* ===========================
    HERO CONTENT
 =========================== */
 
@@ -542,17 +553,19 @@ body{
 
     .navbar{
 
-        width:92%;
+        display:flex;
 
-        padding:18px 24px;
+        flex-direction:row;
 
-        border-radius:28px;
+        justify-content:space-between;
 
-        top:15px;
+        align-items:center;
 
-        flex-direction:column;
+        padding:16px 20px;
 
-        gap:14px;
+        width:100%;
+
+        border-radius:0;
 
     }
 
@@ -581,6 +594,8 @@ body{
         font-size:.95rem;
 
     }
+
+    
 
     /* HERO CONTENT */
 
@@ -786,6 +801,38 @@ body{
 
         font-size:2.3rem;
 
+    }
+
+    .hamburger{
+        display:block;
+    }
+
+    .nav-menu{
+
+        display:none;
+
+        position:absolute;
+
+        top:70px;
+
+        left:0;
+
+        width:100%;
+
+        background:rgba(0,0,0,.9);
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:25px;
+
+        padding:30px 0;
+
+    }
+
+    .nav-menu.active{
+        display:flex;
     }
 
 }
