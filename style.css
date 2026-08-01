@@ -495,39 +495,312 @@ body{
 
 }
 
-/* ===========================
-   RESPONSIVE
+//* ===========================
+   TABLET
 =========================== */
 
-@media(max-width:900px){
+@media (max-width:992px){
 
     .navbar{
 
-        flex-direction:column;
-
-        gap:18px;
+        width:94%;
+        padding:16px 28px;
 
     }
 
     .nav-menu{
 
-        flex-wrap:wrap;
-
-        justify-content:center;
-
-        gap:18px;
+        gap:22px;
 
     }
 
     .hero-content h1{
 
-        font-size:4rem;
+        font-size:4.3rem;
 
     }
 
 }
 
-@media(max-width:600px){
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    /* HERO */
+
+    .hero{
+
+        min-height:100vh;
+
+        background-position:50% 50%;
+
+    }
+
+    /* NAVBAR */
+
+    .navbar{
+
+        width:92%;
+
+        padding:18px 24px;
+
+        border-radius:28px;
+
+        top:15px;
+
+        flex-direction:column;
+
+        gap:14px;
+
+    }
+
+    .logo{
+
+        font-size:2.2rem;
+
+        letter-spacing:2px;
+
+    }
+
+    .nav-menu{
+
+        display:flex;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+        gap:16px;
+
+    }
+
+    .nav-menu a{
+
+        font-size:.95rem;
+
+    }
+
+    /* HERO CONTENT */
+
+    .hero-content{
+
+        padding:200px 20px 70px;
+
+    }
+
+    .subtitle{
+
+        font-size:.7rem;
+
+        letter-spacing:4px;
+
+        margin-bottom:14px;
+
+    }
+
+    .hero-content h1{
+
+        font-size:3.4rem;
+
+        line-height:1.1;
+
+    }
+
+    .hero-content h1 span{
+
+        font-size:2rem;
+
+        margin:8px 0;
+
+    }
+
+    .date{
+
+        font-size:1.1rem;
+
+        letter-spacing:2px;
+
+    }
+
+    .venue{
+
+        font-size:1rem;
+
+        letter-spacing:1px;
+
+    }
+
+    .hero-buttons{
+
+        margin-top:35px;
+
+    }
+
+    .primary-btn{
+
+        width:230px;
+
+        padding:16px;
+
+    }
+
+    .scroll-indicator{
+
+        display:none;
+
+    }
+
+    /* COUNTDOWN */
+
+    .countdown-section{
+
+        padding:80px 20px;
+
+    }
+
+    .section-heading h2{
+
+        font-size:2.3rem;
+
+    }
+
+    #countdown{
+
+        gap:16px;
+
+    }
+
+    .count-card{
+
+        width:130px;
+
+        height:130px;
+
+    }
+
+    .count-card span{
+
+        font-size:2.3rem;
+
+    }
+
+    /* EVENTS */
+
+    .events-section{
+
+        padding:80px 20px;
+
+    }
+
+    .events-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .event-card{
+
+        padding:30px;
+
+    }
+
+    /* VENUE */
+
+    .venue-section{
+
+        padding:80px 20px;
+
+    }
+
+    .venue-container{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+    }
+
+    .venue-image img{
+
+        height:300px;
+
+    }
+
+    .venue-details h3{
+
+        font-size:2.2rem;
+
+    }
+
+    /* RSVP */
+
+    .rsvp-section{
+
+        padding:80px 20px;
+
+    }
+
+    .rsvp-form{
+
+        padding:30px 24px;
+
+    }
+
+    .checkbox-group{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* CONTACT */
+
+    .contact-section{
+
+        padding:80px 20px;
+
+    }
+
+    .contact-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contact-card{
+
+        padding:35px 25px;
+
+    }
+
+    /* FOOTER */
+
+    footer{
+
+        padding:60px 20px;
+
+    }
+
+    footer h2{
+
+        font-size:2.3rem;
+
+    }
+
+}
+
+/* ===========================
+   SMALL PHONES
+=========================== */
+
+@media (max-width:430px){
+
+    .hero-content{
+
+        padding-top:210px;
+
+    }
 
     .hero-content h1{
 
@@ -537,26 +810,31 @@ body{
 
     .hero-content h1 span{
 
-        font-size:2rem;
+        font-size:1.8rem;
 
     }
 
-    .section-heading h2{
+    .date{
 
-        font-size:2.4rem;
+        font-size:1rem;
+
+    }
+
+    .primary-btn{
+
+        width:210px;
 
     }
 
     .count-card{
 
-        width:120px;
+        width:110px;
 
-        height:120px;
+        height:110px;
 
     }
 
 }
-
 /* ===========================
    EVENTS
 =========================== */
