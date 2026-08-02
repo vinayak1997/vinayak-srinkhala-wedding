@@ -568,7 +568,7 @@ body{
 
     }
 
-    /* NAVBAR */
+   /* NAVBAR */
 
     .navbar{
 
@@ -625,13 +625,62 @@ body{
 
     .nav-menu{
 
-        display:flex;
+        position:fixed;
+
+        top:72px;
+
+        left:0;
+
+        right:0;
+
+        width:100%;
+
+        margin:0;
+
+        padding:30px 0;
+
+        list-style:none;
+
+        display:none;
+
+        flex-direction:column;
 
         justify-content:center;
 
-        flex-wrap:wrap;
+        align-items:center;
 
-        gap:16px;
+        gap:20px;
+
+        background:rgba(20,20,20,.96);
+
+        backdrop-filter:blur(18px);
+
+        -webkit-backdrop-filter:blur(18px);
+
+        z-index:999;
+
+    }
+
+
+    .nav-menu.active{
+ 
+        display:flex !important;
+
+    }
+
+    .nav-menu a{
+
+        color:white;
+
+        font-size:1.1rem;
+
+        text-decoration:none;
+
+    }
+
+    .nav-menu a:hover{
+
+        color:var(--gold);
 
     }
 
